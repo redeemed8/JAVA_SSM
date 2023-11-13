@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--
+        context:exclude-filter：排除扫描
+            type：设置排除扫描的方式
+            type=“annotation||assignable”
+                annotation：根据注解的类型进行排除，expression需要设置要排除的注解的全类名
+                assignable：根据类的类型进行排除，expression需要设置要排除的类的全类名
+
+        context:exclude-filter：包含扫描
+        注意：需要在 context:component-scan 标签中设置 use-default-filters="false"
+            use-default-filters="false"  所设置的包下所有的类都需要扫描，此时可以使用排除扫描
+            use-default-filters="true"   所设置的报下所有的类都需要扫描，此时可以使用包含扫描     =====》  默认的
+    -->
+
+    <!--    扫描组件    -->
+    <context:component-scan base-package="com.jchhh.spring"/>
+    <!--<context:component-scan base-package="com.jchhh.spring" use-default-filters="false">
+        &lt;!&ndash;<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>&ndash;&gt;
+        &lt;!&ndash;<context:exclude-filter type="assignable" expression="com.jchhh.spring.controller.UserController"/>&ndash;&gt;
+
+        &lt;!&ndash;<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>&ndash;&gt;
+    </context:component-scan>-->
+
+<!--    <bean id="userService" class="com.jchhh.spring.service.impl.UserServiceImpl"/>
+
+    <bean id="userDao" class="com.jchhh.spring.dao.impl.UserDaoImpl"/>-->
+
+<!--    <bean id="service" class="com.jchhh.spring.service.impl.UserServiceImpl"/>
+
+    <bean id="dao" class="com.jchhh.spring.dao.impl.UserDaoImpl"/>-->
+
+</beans>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="student_one" class="com.jchhh.spring.pojo.Student"/>
+
+    <bean id="student_two" class="com.jchhh.spring.pojo.Student">
+        <!--
+            properties ： 通过成员变量的 set 方法进行赋值
+            name ： 设置需要赋值的属性名（和 set 方法有关）
+            value ：设置为属性所赋的值
+        -->
+        <property name="sid" value="1001"/>
+        <property name="sname" value="陈婷"/>
+        <property name="age" value="18"/>
+        <property name="gender" value="女"/>
+    </bean>
+
+    <bean id="stu_three" class="com.jchhh.spring.pojo.Student">
+        <constructor-arg value="1002"/>
+        <constructor-arg value="李四"/>
+        <constructor-arg value="24"/>
+        <constructor-arg value="女" name="gender"/>
+    </bean>
+
+    <bean id="stu_four" class="com.jchhh.spring.pojo.Student">
+        <property name="sid" value="1004"/>
+        <property name="sname" value="&lt;大小括号&gt;"/>
+        <property name="age">
+            <null/>
+        </property>
+        <property name="gender">
+            <value><![CDATA[<我是男生>]]></value>
+        </property>
+        <property name="score" value="100.32"/>
+    </bean>
+
+    <bean id="clazzOne" class="com.jchhh.spring.pojo.Clazz">
+        <property name="cid" value="1111"/>
+        <property name="cname" value="哈哈11班"/>
+    </bean>
+
+
+    <bean id="stu_five" class="com.jchhh.spring.pojo.Student">
+        <property name="sid" value="1005"/>
+        <property name="sname" value="王五"/>
+        <property name="age" value="20"/>
+        <property name="gender" value="女"/>
+        <!--    ref ： 引用 IOC 容器中的某个 bean 的 id   -->
+        <!--<property name="clazz" ref="clazzOne"/>-->
+        <!--  级联方式，相当于修改了类中属性，要保证先把clazz属性赋值或实例化  -->
+        <!--<property name="clazz.cid" value="2222"/>-->
+        <!--<property name="clazz.cname" value="哈哈22"/>-->
+        <property name="clazz">
+            <!--    内部 bean 只能在当前bean内使用，不能通过IOC容器直接获取  -->
+            <bean id="clazzInner" class="com.jchhh.spring.pojo.Clazz">
+                <property name="cid" value="3333"/>
+                <property name="cname" value="哈哈33班"/>
+            </bean>
+        </property>
+        <property name="hobby">
+            <array>
+                <!--<ref bean="id名字"></ref>-->
+                <value>抽烟</value>
+                <value>喝酒</value>
+                <value>烫头</value>
+                <value>蹦迪</value>
+                <value>嫖娼</value>
+            </array>
+        </property>
+        <property name="teacherMap" ref="teacherMap"/>
+        <!--        <property name="teacherMap">
+                    <map>
+                        <entry key="10086" value-ref="teacherOne"/>
+                        <entry key="10088" value-ref="teacherTwo"/>
+                    </map>
+                </property>-->
+    </bean>
+
+    <bean id="clazzTwo" class="com.jchhh.spring.pojo.Clazz">
+        <property name="cid" value="1111"/>
+        <property name="cname" value="哈哈11班"/>
+        <property name="students" ref="studentList"/>
+        <!--        <property name="students">
+                    <list>
+                        <ref bean="student_one"/>
+                        <ref bean="student_two"/>
+                        <ref bean="stu_three"/>
+                        <ref bean="stu_four"/>
+                        <ref bean="stu_five"/>
+                    </list>
+                </property>-->
+    </bean>
+
+    <bean id="teacherOne" class="com.jchhh.spring.pojo.Teacher">
+        <property name="tid" value="10086"/>
+        <property name="tname" value="八嘎"/>
+    </bean>
+
+    <bean id="teacherTwo" class="com.jchhh.spring.pojo.Teacher">
+        <property name="tid" value="10088"/>
+        <property name="tname" value="大宝"/>
+    </bean>
+
+    <!--配置一个集合类型的 bean，需要使用 util 的约束-->
+    <util:list id="studentList">
+        <ref bean="student_one"/>
+        <ref bean="student_two"/>
+        <ref bean="stu_three"/>
+    </util:list>
+
+    <util:map id="teacherMap">
+        <entry key="10086" value-ref="teacherOne"/>
+        <entry key="10010" value-ref="teacherTwo"/>
+    </util:map>
+
+
+    <bean id="stu_six" class="com.jchhh.spring.pojo.Student"
+          p:sid="1006" p:sname="小明" p:teacherMap-ref="teacherMap">
+
+    </bean>
+</beans>
