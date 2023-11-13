@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="_Mybatis_Parameter" />
+        <module name="_SpringMVC_helloworld" />
+        <module name="_Mybatis_Cache" />
+        <module name="_Spring_helloWorld" />
+        <module name="_SpringMVC_ajax" />
+        <module name="_Mybatis_1" />
+        <module name="_SpringMVC_listener" />
+        <module name="_SpringMVC_demo" />
+        <module name="_Mybatis_resultMap" />
+        <module name="_Spring_ioc_xml" />
+        <module name="_Spring_aop" />
+        <module name="_Spring_proxy" />
+        <module name="_Mybatis_mbg" />
+        <module name="_Spring_transaction" />
+        <module name="_SSM_final" />
+        <module name="_Spring_ioc_annotation" />
+        <module name="_SpringMVC_rest" />
+        <module name="_SpringMVC_doFile" />
+        <module name="_Mybatis_dynamicSQL" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="_Mybatis_1" target="1.8" />
+      <module name="_Mybatis_Cache" target="1.8" />
+      <module name="_Mybatis_dynamicSQL" target="1.8" />
+      <module name="_Mybatis_mbg" target="1.8" />
+      <module name="_Mybatis_Parameter" target="1.8" />
+      <module name="_Mybatis_resultMap" target="1.8" />
+      <module name="_Spring_aop" target="1.6" />
+      <module name="_Spring_helloWorld" target="1.5" />
+      <module name="_Spring_ioc_annotation" target="1.6" />
+      <module name="_Spring_ioc_xml" target="1.6" />
+      <module name="_Spring_MVC_helloworld" target="1.5" />
+      <module name="_Spring_proxy" target="1.6" />
+      <module name="_Spring_transaction" target="1.8" />
+      <module name="_SpringMVC_ajax" target="1.8" />
+      <module name="_SpringMVC_demo" target="1.8" />
+      <module name="_SpringMVC_doFile" target="1.8" />
+      <module name="_SpringMVC_helloworld" target="1.8" />
+      <module name="_SpringMVC_listener" target="1.8" />
+      <module name="_SpringMVC_rest" target="1.8" />
+      <module name="_SSM_final" target="1.8" />
+      <module name="Mybatis_1" target="1.8" />
+      <module name="w1" target="1.8" />
+      <module name="w2" target="1.5" />
+      <module name="ZzZzZw" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

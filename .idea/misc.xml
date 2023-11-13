@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/_Spring_MVC_helloworld" />
+    <file type="web" url="file://$PROJECT_DIR$/_SpringMVC_ajax" />
+    <file type="web" url="file://$PROJECT_DIR$/_SpringMVC_demo" />
+    <file type="web" url="file://$PROJECT_DIR$/_SpringMVC_doFile" />
+    <file type="web" url="file://$PROJECT_DIR$/_SpringMVC_helloworld" />
+    <file type="web" url="file://$PROJECT_DIR$/_SpringMVC_listener" />
+    <file type="web" url="file://$PROJECT_DIR$/_SpringMVC_rest" />
+    <file type="web" url="file://$PROJECT_DIR$/_SSM_final" />
+    <file type="web" url="file://$PROJECT_DIR$/ZzZzZw" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/_Mybatis_1/pom.xml" />
+        <option value="$PROJECT_DIR$/_Mybatis_Parameter/pom.xml" />
+        <option value="$PROJECT_DIR$/_Mybatis_resultMap/pom.xml" />
+        <option value="$PROJECT_DIR$/_Mybatis_dynamicSQL/pom.xml" />
+        <option value="$PROJECT_DIR$/_Mybatis_Cache/pom.xml" />
+        <option value="$PROJECT_DIR$/_Mybatis_mbg/pom.xml" />
+        <option value="$PROJECT_DIR$/_Spring_helloWorld/pom.xml" />
+        <option value="$PROJECT_DIR$/_Spring_ioc_xml/pom.xml" />
+        <option value="$PROJECT_DIR$/_Spring_ioc_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/_Spring_proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/_Spring_aop/pom.xml" />
+        <option value="$PROJECT_DIR$/_Spring_transaction/pom.xml" />
+        <option value="$PROJECT_DIR$/_SpringMVC_helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/_SpringMVC_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/_SpringMVC_rest/pom.xml" />
+        <option value="$PROJECT_DIR$/_SpringMVC_ajax/pom.xml" />
+        <option value="$PROJECT_DIR$/_SpringMVC_doFile/pom.xml" />
+        <option value="$PROJECT_DIR$/_SpringMVC_listener/pom.xml" />
+        <option value="$PROJECT_DIR$/_SSM_final/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

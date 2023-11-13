@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: ognl:ognl:3.1.26">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../Maven3.5.4/apache-maven-3.5.4/mvn_repository/ognl/ognl/3.1.26/ognl-3.1.26.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../Maven3.5.4/apache-maven-3.5.4/mvn_repository/ognl/ognl/3.1.26/ognl-3.1.26-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../Maven3.5.4/apache-maven-3.5.4/mvn_repository/ognl/ognl/3.1.26/ognl-3.1.26-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

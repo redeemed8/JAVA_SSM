@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/_Mybatis_1.iml" filepath="$PROJECT_DIR$/_Mybatis_1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_Mybatis_Cache.iml" filepath="$PROJECT_DIR$/_Mybatis_Cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_Mybatis_Parameter.iml" filepath="$PROJECT_DIR$/_Mybatis_Parameter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_Mybatis_dynamicSQL.iml" filepath="$PROJECT_DIR$/_Mybatis_dynamicSQL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_Mybatis_mbg.iml" filepath="$PROJECT_DIR$/_Mybatis_mbg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_Mybatis_resultMap.iml" filepath="$PROJECT_DIR$/_Mybatis_resultMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_SSM_.iml" filepath="$PROJECT_DIR$/_SSM_.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_SSM_final.iml" filepath="$PROJECT_DIR$/_SSM_final.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_SpringMVC_ajax.iml" filepath="$PROJECT_DIR$/_SpringMVC_ajax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_SpringMVC_demo.iml" filepath="$PROJECT_DIR$/_SpringMVC_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_SpringMVC_doFile.iml" filepath="$PROJECT_DIR$/_SpringMVC_doFile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_SpringMVC_helloworld.iml" filepath="$PROJECT_DIR$/_SpringMVC_helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_SpringMVC_listener.iml" filepath="$PROJECT_DIR$/_SpringMVC_listener.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_SpringMVC_rest.iml" filepath="$PROJECT_DIR$/_SpringMVC_rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_Spring_aop.iml" filepath="$PROJECT_DIR$/_Spring_aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_Spring_helloWorld.iml" filepath="$PROJECT_DIR$/_Spring_helloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_Spring_ioc_annotation.iml" filepath="$PROJECT_DIR$/_Spring_ioc_annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_Spring_ioc_xml.iml" filepath="$PROJECT_DIR$/_Spring_ioc_xml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_Spring_proxy.iml" filepath="$PROJECT_DIR$/_Spring_proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_Spring_transaction.iml" filepath="$PROJECT_DIR$/_Spring_transaction.iml" />
+    </modules>
+  </component>
+</project>
