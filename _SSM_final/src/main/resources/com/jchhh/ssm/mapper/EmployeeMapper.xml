@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.jchhh.ssm.mapper.EmployeeMapper">
+
+    <!--
+        mapper接口和映射文件要保证两个一致
+        1. mapper接口中的全类名和映射文件的namespace一致
+        2. mapper接口中的方法的方法名要和映射文件中的sql的id保持一致
+    -->
+    <!--在这里写sql语句   ↓ -->
+
+    <!--List<Employee> getAllEmployee();-->
+    <select id="getAllEmployee" resultType="Employee">
+        select * from t_emp
+    </select>
+
+    <!--void saveEmployee(Employee employee);-->
+    <insert id="saveEmployee">
+        insert into t_emp values (null,#{empName},#{age},#{gender},#{email})
+    </insert>
+
+    <!--void deleteEmployee(@Param("name") String name);-->
+    <delete id="deleteEmployee">
+        delete from t_emp where emp_name = #{name}
+    </delete>
+
+    <!--Employee getEmployeeByName(@Param("name") String name);-->
+    <select id="getEmployeeByName" resultType="Employee">
+        select * from t_emp where emp_name = #{name}
+    </select>
+
+    <!--void updateEmployee(@Param("oldName") String oldName, @Param("empName") String empName, @Param("age") Integer age,
+                        @Param("gender") String gender, @Param("empemailName") String email);-->
+    <update id="updateEmployee">
+        update t_emp set emp_name = #{empName},age = #{age},gender = #{gender}, email = #{email}
+            where emp_name = #{oldName}
+    </update>
+
+</mapper>
